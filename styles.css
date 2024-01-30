@@ -66,9 +66,9 @@
     height: 300px;
     width: 100%;
 }
-.card{
+/*.card{
     min-height: 100%;
-}}
+}*/}
 .videocontainer{
     display :flex;
     align-items: center;
@@ -77,9 +77,10 @@
     margin-right: auto;
     padding :3%;
     object-fit: cover;
+    margin-top: 2%;
 
 }
-.video{
+.video1{
     margin-left:auto;
     margin-right: auto;
     width:60%;
@@ -92,4 +93,8 @@
     padding-left: 0px;
     padding-right: 0px;
     text-align: left;
+}
+.menu-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease; 
 }
