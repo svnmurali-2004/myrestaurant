@@ -95,7 +95,12 @@ document.getElementById("search-input").addEventListener("input", function(event
       document.getElementById("menu-items").innerHTML = filteredHTML.join(" ");
   }
 });
-
+document.getElementById("about").addEventListener("click",function(){
+  window.location.href="about.html"
+})
+document.getElementById("contact").addEventListener("click",function(){
+  window.location.href="contactus.html"
+})
 
   
   
