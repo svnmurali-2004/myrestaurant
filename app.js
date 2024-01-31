@@ -86,7 +86,7 @@ document.getElementById("search-input").addEventListener("input", function(event
                       <h5 class="card-title text-success">${item.title}</h5>
                       <h6 class="card-subtitle mb-2 text-muted">${item.price}</h6>
                       <p class="card-text text-danger">${item.description}</p>
-                      <p class="card-text"><small class="text-muted">Category: ${item.category}</small></p>
+                      <p class="card-text"><div class="text-muted">Category: ${item.category}</div></p>
                   </div>
               </div>
           </div>`;

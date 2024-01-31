@@ -61,7 +61,92 @@
         font-size:larger;
     }
 }*/
+@media (min-width: 200px) {
+    .navbar-toggler{
+        height: 80%;
+    }
+    .navbar-brand{
+        font-size: 100%;
+        font-weight: bolder;
+    }
+    .navbar-nav{
+        font-size: 4vw;
+
+    }
+    .nav-link{
+        width:100%;
+        height: fit-content;
+        background-color: rgba(171, 167, 167, 0.212);
+    }
+    #search-input{
+        font-size:xx-large;
+    }
+    .menu-items{
+        width: 97%;
+    }
+    .navbar{
+        position: sticky;
+        top:0;
+        z-index:1024;
+    }
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        display:grid;
+        grid-template-columns:100% ;
+        row-gap: 2rem;
+        padding: 2px;
+    }
+    .menu-item{
+        padding: auto;
+        text-align: center;
+        min-height: 30px;
+        min-width: 100px;
+        
+    }
+    .card-img-top{
+        height: 300px;
+        width: 100%;
+    }
+    .card{
+        min-height: 100%;
+    }
+    .video1{
+        margin-left:3px;
+        margin-right: 3px;
+        width:80%;
+        border-radius:1% ;
+        height: 500px;
+        object-fit: cover;
+        
+    }
+    .videocontainer{
+        
+        display :flex;
+        align-items: center;
+        justify-content: center;
+        margin-left:auto;
+        margin-right: auto;
+        padding :3%;
+        object-fit: cover;
+        
+    
+    }
+    .card-body{
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: left;
+        font-size:40px;
+    }
+    .card-title{
+        font-size: 55px;
+    }
+}
 @media (min-width: 576px) {
+    .navbar-nav{
+        font-size: 40px;
+
+    }
     .navbar-brand{
         font-size: 50px;
         font-weight: bolder;
@@ -99,12 +184,13 @@
     .video1{
         margin-left:3px;
         margin-right: 3px;
-        width:100%;
+        width:80%;
         border-radius:1% ;
         height: 500px;
         object-fit: cover;
         
     }
+    
     .videocontainer{
         
         display :flex;
@@ -129,9 +215,17 @@
 }
 
 @media (min-width: 992px) {
-    
+    .nav-link{
+        background-color: white;
+    }
+    .navbar-nav{
+        font-size: 100%;
+    }
+    #search-input{
+        font-size: 100%;
+    }
     .navbar{
-        height: 50px;
+        height: auto;
     }
     .navbar-brand{
         font-size: 120%;
@@ -166,7 +260,6 @@
         margin-right: auto;
         padding :3%;
         object-fit: cover;
-        margin-top: 2%;
     
     }
     .card-body{
@@ -178,11 +271,25 @@
     .card-title{
         font-size: xx-large;
     }
+    .video1{
+        margin-left:auto;
+        margin-right: auto;
+        width:60%;
+        border-radius:1% ;
+        height: 500px;
+        object-fit: cover;
+        
+    }
 }
 @media (min-width:1280px){
+    .navbar-nav{
+        font-size: 100%;
+    }
+    #search-input{
+        font-size: 100%;
+    }
     .navbar{
         height: auto;
-
     }
     .navbar-brand{
         font-size: 120%;
@@ -232,15 +339,7 @@
 }
 }
 
-.video1{
-    margin-left:auto;
-    margin-right: auto;
-    width:60%;
-    border-radius:1% ;
-    height: 500px;
-    object-fit: cover;
-    
-}
+
 
 .menu-item:hover {
     transform: scale(1.05);
