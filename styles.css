@@ -1,14 +1,21 @@
-@media (min-width: 576px) {
+/*@media(max-width:575px){
+    .card-body{
+        font-size:25px;
+    }
+    .menu-items{
+        width: 97%;
+    }
     .navbar{
-        min-height:80px;
+        min-height: 80px;
+        margin-bottom: 1px;
     }
     .container{
         margin-left: auto;
         margin-right: auto;
         display:grid;
-        grid-template-columns:96% ;
+        grid-template-columns:100% ;
         row-gap: 2rem;
-        padding: auto;
+        padding: 2px;
     }
     .menu-item{
         padding: auto;
@@ -24,9 +31,111 @@
     .card{
         min-height: 100%;
     }
+    .video1{
+        margin-left:3px;
+        margin-right: 3px;
+        width:100%;
+        border-radius:1% ;
+        height: 500px;
+        object-fit: cover;
+        
+    }
+    .videocontainer{
+        display :flex;
+        align-items: center;
+        justify-content: center;
+        margin-left:auto;
+        margin-right: auto;
+        padding :3%;
+        object-fit: cover;
+        margin-top: 100px;
+    
+    }
+    .card-body{
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: left;
+        font-size:x-large;
+    }
+    .card-title{
+        font-size:larger;
+    }
+}*/
+@media (min-width: 576px) {
+    .navbar-brand{
+        font-size: 50px;
+        font-weight: bolder;
+    }
+    .menu-items{
+        width: 97%;
+    }
+    .navbar{
+        position: sticky;
+        top:0;
+        z-index:1024;
+    }
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        display:grid;
+        grid-template-columns:100% ;
+        row-gap: 2rem;
+        padding: 2px;
+    }
+    .menu-item{
+        padding: auto;
+        text-align: center;
+        min-height: 30px;
+        min-width: 100px;
+        
+    }
+    .card-img-top{
+        height: 300px;
+        width: 100%;
+    }
+    .card{
+        min-height: 100%;
+    }
+    .video1{
+        margin-left:3px;
+        margin-right: 3px;
+        width:100%;
+        border-radius:1% ;
+        height: 500px;
+        object-fit: cover;
+        
+    }
+    .videocontainer{
+        
+        display :flex;
+        align-items: center;
+        justify-content: center;
+        margin-left:auto;
+        margin-right: auto;
+        padding :3%;
+        object-fit: cover;
+        
+    
+    }
+    .card-body{
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: left;
+        font-size:40px;
+    }
+    .card-title{
+        font-size: 55px;
+    }
 }
 
 @media (min-width: 992px) {
+    
+    .navbar{
+        height: 50px;
+    }
+    .navbar-brand{
+        font-size: 120%;
+    }
     .container{
         margin-left: auto;
         margin-right: auto;
@@ -49,8 +158,36 @@
     .card{
         min-height: 100%;
     }
+    .videocontainer{
+        display :flex;
+        align-items: center;
+        justify-content: center;
+        margin-left:auto;
+        margin-right: auto;
+        padding :3%;
+        object-fit: cover;
+        margin-top: 2%;
+    
+    }
+    .card-body{
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: left;
+        font-size: x-large;
+    }
+    .card-title{
+        font-size: xx-large;
+    }
 }
 @media (min-width:1280px){
+    .navbar{
+        height: auto;
+
+    }
+    .navbar-brand{
+        font-size: 120%;
+    }
+
 .container{
     margin-left: auto;
     margin-right: auto;
@@ -72,7 +209,7 @@
 }
 /*.card{
     min-height: 100%;
-}*/}
+}*/
 .videocontainer{
     display :flex;
     align-items: center;
@@ -84,6 +221,17 @@
     margin-top: 2%;
 
 }
+.card-body{
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left;
+    font-size: x-large;
+}
+.card-title{
+    font-size: 30px;
+}
+}
+
 .video1{
     margin-left:auto;
     margin-right: auto;
@@ -93,11 +241,7 @@
     object-fit: cover;
     
 }
-.card-body{
-    padding-left: 0px;
-    padding-right: 0px;
-    text-align: left;
-}
+
 .menu-item:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease; 
