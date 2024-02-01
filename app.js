@@ -33,9 +33,14 @@ const menu = [
     { id: 33, title: "Dahi Vada" , category: "Starters" , price: "$9" , description: "deep fried fritters or dumplings, and the recipe is about as straightforward as it sounds. Fluffy, melt-in-your-mouth dumplings are coated in a simple creamy yogurt, and topped with classic Indian chutneys." , img: "https://www.nehascookbook.com/wp-content/uploads/2022/09/Instant-dahi-vada-WS.jpg" },
     { id: 34, title: "Gobi Manchurian" , category: "Starters" , price: "$11" , description: "batter coated, fried, crispy cauliflower florets tossed in this spicy, sweet, hot and umami manchurian sauce." , img: "https://www.roguechef.com/wp-content/uploads/2021/01/Gobi-Manchurian.png" },
     { id: 35, title: "Onion Pakoda", category: "Starters", price: "$3", description: "fried crisp onion pakoda, slice the onions uniformly to thin slices" , img: "https://i.pinimg.com/736x/4c/9a/f4/4c9af42366ba2b64126598b67176e3c7.jpg" },
+<<<<<<< HEAD
 
 
   ];
+=======
+    
+];
+>>>>>>> d76cc3b92680bc4ee2c7c2dfb7b16645344a2acf
   console.log("js file linked")
   const filter=(pref)=>{
     const filterresult=menu.map((item)=>{
