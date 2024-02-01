@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Food Information App</title>
@@ -117,7 +119,7 @@
 
         <!-- Stylish Contact Form -->
         <div class="contact-form">
-            <form action="#" method="post">
+            <form id="my-form" action="#" method="post">
                 <div class="form-group">
                     <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                 </div>
@@ -130,7 +132,6 @@
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
         </div>
-
         <!-- Stylish Return Home Button -->
         <div class="text-center mt-4">
             <a href="index.html" class="btn btn-home">Return Home</a>
@@ -141,7 +142,36 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const form = document.getElementById('my-form');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent form submission
+
+            // Capture form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message=document.getElementById('message').value;
+
+            // Prepare data object
+            const data = {
+                name: name,
+                email: email,
+                message:message
+
+            };
+            console.log("middle of script")
+            console.log(data,"outer")
+            // Send data to Firebase Realtime Database using Axios
+            axios.post('https://my-restaurant-food-info-default-rtdb.firebaseio.com/formData.json', data)
+                .then(()=> {
+                  form.reset(); // Reset form after submission
+                    })
+                    .catch(error => {
+                        console.error('Error inserting data:', error);
+                        });
+        });
+    </script>
 </body>
 
 </html>
-
